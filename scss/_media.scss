@@ -1,0 +1,207 @@
+// Tablets and smaller screens
+@media(max-width: 830px) {
+  #header-home{
+    height: 75vh;
+  }
+
+  #home-showcase{
+    .showcase-content{
+      padding-top: 5rem;
+    }
+  }
+
+  #work-page{
+    .work-a{
+      .item{
+        &-text{
+          top: 25%;
+        }
+      }
+    }
+  }
+
+  #contact{
+    .contact-d{
+      .poster{
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px){
+  #header-home{
+    height: 45vh;
+  }
+
+  #home{
+    .home{
+      &-b{
+        .grid-b{
+          .stat{
+            // &-title{
+            //   padding: 0.2rem 0;
+            // }
+
+            &:nth-child(odd){
+              padding: 3rem;
+            }
+            &:nth-child(even){
+              padding: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 500px){
+  #header{
+    &-home{
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+    }
+    &-about{
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+    }
+  }
+  #main-nav{
+    flex-direction: column;
+    align-items: center;
+    
+    .navbar{
+      
+      ul{
+        li{
+          padding: 1rem;
+        }
+      }
+    }
+  }
+  #home-showcase{
+    .showcase-content{
+      display: none;
+    }
+  }
+
+  #home{
+    .home-a{
+      .grid-a{
+        grid-template-columns: 1fr;
+      }
+    }
+    .home-b{
+      .grid-b{
+        grid-template-columns: 1fr;
+      }
+    }
+    .home-c{
+      .grid-c{
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  #main-footer{
+    .footer-content{
+      flex-direction: column;
+      p{
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+
+  // ABOUT PAGE
+  #about{
+    .about-a{
+      .about-info{
+      grid-template-areas:
+        'devpic'
+        'bio'
+        'aw1'
+        'aw2'
+        'aw3';
+      }
+    }
+  }
+
+  #logos{
+      display: none;
+  }
+
+  #testimonials{
+    .testimonial-grid{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // WORK PAGE
+  #work-page{
+    .work{
+      &-a{
+        .items{
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+
+  // CONTACT PAGE
+  #contact{
+    .contact{
+      &-b{
+        .input-fields{
+          grid-template-areas: 
+          'name'
+          'email'
+          'subject'
+          'phone'
+          'message';
+        }
+      }
+      &-c{
+        .details{
+          grid-template-columns: 1fr;
+          padding: 2rem 0;
+          div{
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #555;
+            &:last-child{
+              border-bottom: none;
+              padding-bottom: 0.5rem;
+            margin-bottom: 0.5rem;
+            }
+          }
+        }
+      }
+      &-d{
+        .poster{
+          font-size: 1.5rem;
+          padding: 3rem 0;
+        }
+      }
+    }
+  }
+}
+
+@media(max-height: 580px){
+  #header{
+    &-home{
+      height: 100vh;
+    }
+    &-about{
+      height: 25vh;
+    }
+  }
+
+  #home-showcase{
+    .showcase-content{
+      padding-top: 4.5rem;
+      h1{
+        font-size: 3.2rem;
+      }
+    }
+  }
+}

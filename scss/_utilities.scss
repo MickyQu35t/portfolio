@@ -1,0 +1,71 @@
+// MAIN PARAGRAPHS
+.lead{
+  font-size: 1.3rem;
+}
+
+.bottom-line{
+  background: $main-color;
+  height: 2px;
+  width: 3rem;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.section-heading{
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+// BUTTONS
+%btn-shared{
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  margin: 2rem 0;
+}
+
+.btn{
+  &-light{
+    @extend %btn-shared;
+    background: $light-color;
+    color: $dark-color;
+  }
+
+  &-dark{
+    @extend %btn-shared;
+    background: $dark-color;
+    color: $light-color;
+  }
+}
+
+// PADDING TOP AND BOTTOM
+.py{
+  &-1{padding: 1rem 0; }
+  &-2{padding: 2rem 0; }
+  &-3{padding: 3rem 0; }
+}
+
+
+// PADDING ALL ROUND
+.p{
+  &-1{padding: 1rem; }
+  &-2{padding: 2rem; }
+  &-3{padding: 3rem; }
+}
+
+// CENTER TEXT
+.text-center{
+  text-align: center;
+}
+
+// BACKGROUND COLORS
+.bg-dark{
+  background: $dark-color;
+  color: set-color($dark-color);
+}
+
+.bg-main{
+  background: $main-color;
+  color: set-color($main-color);
+}

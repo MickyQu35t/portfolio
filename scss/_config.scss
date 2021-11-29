@@ -1,0 +1,25 @@
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$dark-color: #333;
+$medium-color: #ccc;
+$font-stack: "Dosis", sans-serif;
+$font-two: 'Roboto', sans-serif;
+$bg-image: url('../img/showcase.jpg');
+$page-width: 1280px;
+
+// FUNCTIONS
+@function set-color($color){
+  @if (lightness($color)> 50){
+    @return $dark-color;
+  } @else{
+    @return $light-color;
+  }
+}
+
+@function bg-color($color){
+  @if($main-color){
+    @return $dark-color;
+  } @else{
+    @return $main-color;
+  }
+}
